@@ -12,7 +12,7 @@ export default function Hero() {
           className="text-white px-8 py-3 rounded-lg hover:opacity-90 transition font-medium"
           style={{ backgroundColor: 'var(--color-brand-dark)', fontFamily: 'var(--font-family-sans)' }}
         >
-          View My Work
+          View My Work :D
         </button>
       </div>
     </section>
