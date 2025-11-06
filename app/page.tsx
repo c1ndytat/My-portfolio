@@ -7,13 +7,14 @@ import Projects from '@/components/Projects';
 export default function Home() {
   return (
     <>
+    
     <NavBar/>
     <main>
     <Hero/>
     </main>
 
-
     </>
     
   );
 }
+
