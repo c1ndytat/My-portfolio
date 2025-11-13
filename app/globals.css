@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --color-brand-light: #a3cef1;
+  --color-brand-light: #A288E3;
   --color-brand: #6096ba;
-  --color-brand-dark: #274C77;
+  --color-brand-dark: #272838;
   --color-brand-accent: #5C95FF;
 
   --font-family-sans: 'Source code pro', monospace;
 }
+
+/* light, accent, brand are making the gradient*/
+/* dark is the button background*/

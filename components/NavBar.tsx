@@ -11,15 +11,15 @@ export default function Navbar() {
         <div className="flex justify-center items-center justify-between h-16">
 
           <Image
-              src="/star.png"
-              alt="star"
-              width={40}
-              height={40}
-              className="rounded-full object-cover cursor-pointer hover:opacity-80 transition"
+            src="/star.png"
+            alt="star"
+            width={40}
+            height={40}
+            className="hidden lg:block rounded-full object-cover cursor-pointer hover:opacity-80 transition"
           />
 
           <div className="hidden md:flex space-x-14">
-            <a href="#home" className="hover:opacity-80 transition"  style={{ fontFamily: 'var(--font-family-sans)', color: 'black', fontSize: '22px' }}>
+            <a href="#home" className="hover:opacity-80 transition" style={{ fontFamily: 'var(--font-family-sans)', color: 'black', fontSize: '22px' }}>
               HOME
             </a>
             <a href="#projects" className="hover:opacity-80 transition" style={{ fontFamily: 'var(--font-family-sans)', color: 'black', fontSize: '22px' }}>
@@ -32,11 +32,11 @@ export default function Navbar() {
           </div>
 
           <Image
-              src="/star.png"
-              alt="star"
-              width={40}
-              height={40}
-              className="rounded-full object-cover cursor-pointer hover:opacity-80 transition"
+            src="/star.png"
+            alt="star"
+            width={40}
+            height={40}
+            className="hidden lg:block rounded-full object-cover cursor-pointer hover:opacity-80 transition"
           />
 
           {/* Mobile menu button */}
