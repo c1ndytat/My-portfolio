@@ -11,14 +11,21 @@ export default function Home() {
 
       <NavBar />
       <main>
-        <Hero />
-        <About />
-        <Contacts />
-        <Projects />
+        <section id="hero">
+          <Hero />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contacts />
+        </section>
       </main>
 
     </>
 
   );
 }
-

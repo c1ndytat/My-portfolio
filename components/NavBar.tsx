@@ -5,6 +5,16 @@ import Image from 'next/image';
 
 
 export default function Navbar() {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
   return (
     <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-4">
@@ -19,16 +29,38 @@ export default function Navbar() {
           />
 
           <div className="hidden md:flex space-x-14">
-            <a href="#home" className="hover:opacity-80 transition" style={{ fontFamily: 'var(--font-family-sans)', color: 'black', fontSize: '22px' }}>
+            <a
+              href="#hero"
+              onClick={(e) => handleSmoothScroll(e, 'hero')}
+              className="hover:opacity-80 transition"
+              style={{ fontFamily: 'var(--font-family-sans)', color: 'black', fontSize: '22px' }}
+            >
               HOME
             </a>
-            <a href="#projects" className="hover:opacity-80 transition" style={{ fontFamily: 'var(--font-family-sans)', color: 'black', fontSize: '22px' }}>
+            <a
+              href="#about"
+              onClick={(e) => handleSmoothScroll(e, 'about')}
+              className="hover:opacity-80 transition"
+              style={{ fontFamily: 'var(--font-family-sans)', color: 'black', fontSize: '22px' }}
+            >
+              ABOUT
+            </a>
+            <a
+              href="#projects"
+              onClick={(e) => handleSmoothScroll(e, 'projects')}
+              className="hover:opacity-80 transition"
+              style={{ fontFamily: 'var(--font-family-sans)', color: 'black', fontSize: '22px' }}
+            >
               PROJECTS
             </a>
-            <a href="#contact" className="hover:opacity-80 transition" style={{ fontFamily: 'var(--font-family-sans)', color: 'black', fontSize: '22px' }}>
+            <a
+              href="#contact"
+              onClick={(e) => handleSmoothScroll(e, 'contact')}
+              className="hover:opacity-80 transition"
+              style={{ fontFamily: 'var(--font-family-sans)', color: 'black', fontSize: '22px' }}
+            >
               CONTACT
             </a>
-
           </div>
 
           <Image
