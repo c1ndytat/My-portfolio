@@ -1,35 +1,11 @@
+import { ArrowUpRight, Github } from "lucide-react";
+
 export default function Projects() {
-    return (
-
-        <section className="min-h-screen flex items-center justify-center" style={{ background: 'linear-gradient(to bottom right, var(--color-brand-light), var(--color-brand))' }}>
-            <div className="text-center px-4">
-
-                <h1 className="text-5xl md:text-6.95xl font-bold mb-7" style={{ fontFamily: 'var(--font-family-sans)', color: 'white' }}>
-                    pls hire me
-                </h1>
-
-                <p className="text-xl md:text-2xl mb-8" style={{ fontFamily: 'var(--font-family-sans)', color: 'rgba(255, 255, 255, 0.9)' }}>
-                    I'm a first-year Software Engineering student @SJSU
-                </p>
-                <div className="flex justify-center space-x-8">
-                    <a
-                        href="/Resume.pdf"
-                        download
-                        className="text-white px-8 py-3 rounded-lg hover:opacity-90 transition font-medium"
-                        style={{ backgroundColor: 'var(--color-brand-dark)', fontFamily: 'var(--font-family-sans)' }}
-                    >
-                        Download CV
-                    </a>
-
-                    <button
-                        className="text-white px-8 py-3 rounded-lg hover:opacity-90 transition font-medium"
-                        style={{ backgroundColor: 'var(--color-brand-dark)', fontFamily: 'var(--font-family-sans)' }}
-                    >
-                        View Work
-                    </button>
-                </div>
-
-            </div>
-        </section>
-    );
+  return <section className="section-shell work-section" id="work">
+    <div className="section-label"><span>02</span> projects</div>
+    <div className="project-stars" aria-hidden="true">✦<span>✧</span><i>✦</i></div>
+    <div className="work-heading"><h2>Selected<br /><em>work.</em></h2><p className="placeholder">Use this space for a sentence about the projects you&apos;d like people to see.</p></div>
+    <article className="project-card"><div className="project-window"><div className="window-header"><span /><span /><span /><p>project-name</p></div><div className="window-content"><p className="code-comment">{"// replace this preview"}</p><p><b>const</b> project = &#123;</p><p className="indent">name: <span>&quot;[ project title ]&quot;</span>,</p><p className="indent">builtWith: <span>&quot;[ tech stack ]&quot;</span>,</p><p className="indent">link: <span>&quot;[ project URL ]&quot;</span></p><p>&#125;;</p></div></div><div className="project-info"><p className="project-number">01 / 01</p><h3>[ Project Title ]</h3><p className="placeholder">Add a short description of the problem, what you built, and what you learned.</p><div className="tag-row"><span>[ tool ]</span><span>[ tool ]</span><span>[ tool ]</span></div><a className="text-link" href="https://github.com/c1ndytat" target="_blank" rel="noreferrer">add project link <Github size={16} /></a></div></article>
+    <a className="archive-link" href="https://github.com/c1ndytat" target="_blank" rel="noreferrer">GitHub <ArrowUpRight size={19} /></a>
+  </section>;
 }
